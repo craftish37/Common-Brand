@@ -3,7 +3,8 @@
 	"package": "net.logandark.branding.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"MixinMinecraftServer"
+		"MixinMinecraftServer",
+		"MixinModStatus"
 	],
 	"client": [
 		"MixinClientBrandRetriever",
