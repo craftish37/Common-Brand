@@ -10,25 +10,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(MinecraftClient.class)
 public class MixinMinecraftClient {
-	/**
-	 * @author LoganDark
-	 */
-	@Overwrite
-	public boolean isModded() {
-		return false;
-	}
-
-	/*@Redirect(
-		method = "addSystemDetailsToCrashReport(Lnet/minecraft/util/SystemDetails;Lnet/minecraft/client/MinecraftClient;Lnet/minecraft/client/resource/language/LanguageManager;Ljava/lang/String;Lnet/minecraft/client/option/GameOptions;)Lnet/minecraft/util/SystemDetails;", // "Is Modded" lambda in addSystemDetailsToCrashReport
-		at = @At(
-			value = "INVOKE",
-			target = "Ljava/lang/Class;getSigners()[Ljava/lang/Object;"
-		),
-		remap = false
-	)
-	private static Object[] onGetSigners(Class aClass) {
-		return new Object[0]; // not null
-	}*/
 
 	@Redirect(
 		method = "<init>",
@@ -38,13 +19,13 @@ public class MixinMinecraftClient {
 		)
 	)
 	private String redirectVersion(RunArgs.Game game) {
-		//String version = game.version;
+	    String version = game.version;
 
-		//if (version.equals("Fabric")) {
+	    if (version.equals("Fabric")) {
 		return SharedConstants.getGameVersion().getName();
-		//}
+		}
 
-		//return version;
+		return version;
 	}
 
 	@Redirect(
@@ -55,6 +36,7 @@ public class MixinMinecraftClient {
 		)
 	)
 	private String redirectVersionType(RunArgs.Game game) {
+
 		String versionType = game.versionType;
 
 		if (versionType.endsWith("Fabric")) {
