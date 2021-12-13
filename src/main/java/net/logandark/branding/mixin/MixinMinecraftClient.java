@@ -19,9 +19,9 @@ public class MixinMinecraftClient {
 		)
 	)
 	private String redirectVersion(RunArgs.Game game) {
-	    //String version = game.version;
+	        //String version = game.version;
 
-	    //if (version.equals("Fabric")) {
+	        //if (version.equals("Fabric")) {
 		return SharedConstants.getGameVersion().getName();
 		//}
 
