@@ -1,21 +1,21 @@
 {
 	"schemaVersion": 1,
-	"id": "branding",
+	"id": "rebranded",
 	"version": "${version}",
 
-	"name": "Branding",
-	"description": "Removes the modded notices from the client.",
-	"authors": ["LoganDark, IMS212, Kichura"],
+	"name": "Rebranded",
+	"description": "Removes the modded notices from the client, but fancier !",
+	"authors": ["LoganDark (archived), IMS212 (outdated), Kichura (updated), craftish37 (actual support)"],
 	"contact": {
-		"sources": "https://github.com/Kichura/fabric-branding"
+		"sources": "none"
 	},
 
 	"license": "GPLv3+",
-	"icon": "assets/branding/icon.png",
+	"icon": "assets/rebranded/icon.png",
 
 	"environment": "client",
 
-	"mixins": ["branding.mixins.json"],
+	"mixins": ["rebranded.mixins.json"],
 
 	"depends": {
 		"fabricloader": "*",

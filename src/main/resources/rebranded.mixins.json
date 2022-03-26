@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "net.craftish37.rebranded.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"MixinMinecraftServer",
+		"MixinModStatus"
+	],
+	"client": [
+		"MixinClientBrandRetriever",
+		"MixinMinecraftClient"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
