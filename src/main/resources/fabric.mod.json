@@ -7,7 +7,7 @@
 	"description": "Removes the modded notices from the client, but fancier !",
 	"authors": ["LoganDark (archived), IMS212 (outdated), Kichura (updated), craftish37 (actual support)"],
 	"contact": {
-		"sources": "none"
+		"sources": "https://github.com/craftish37/fabric-Rebranded"
 	},
 
 	"license": "GPLv3+",
