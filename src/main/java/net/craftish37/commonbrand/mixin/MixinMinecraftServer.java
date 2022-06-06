@@ -1,4 +1,4 @@
-package net.craftish37.rebranded.mixin;
+package net.craftish37.commonbrand.mixin;
 
 import net.minecraft.obfuscate.DontObfuscate;
 import net.minecraft.server.MinecraftServer;
