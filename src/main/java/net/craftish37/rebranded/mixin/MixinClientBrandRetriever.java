@@ -13,6 +13,6 @@ public abstract class MixinClientBrandRetriever {
 	@Overwrite(remap = false)
 	@DontObfuscate
 	public static String getClientModName() {
-		return "vanilla";
+		return "Common-Sense / QuiltMC";
 	}
 }
