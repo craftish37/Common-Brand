@@ -1,13 +1,14 @@
 {
 	"schemaVersion": 1,
-	"id": "rebranded",
+	"id": "commonbrand",
 	"version": "${version}",
 
-	"name": "Rebranded",
-	"description": "Removes the modded notices from the client, but fancier !",
-	"authors": ["LoganDark (archived), IMS212 (outdated), Kichura (updated), craftish37 (actual support)"],
+	"name": "Common-Brand",
+	"description": "Add a cool brand for the Common-Sense modpack",
+	"authors": ["craftish37"],
 	"contact": {
-		"sources": "https://github.com/craftish37/fabric-Rebranded"
+		"sources": "https://github.com/craftish37/fabric-Rebranded",
+		"modpack": "https://modrinth.com/modpack/common-sense"
 	},
 
 	"license": "GPLv3+",
@@ -15,7 +16,9 @@
 
 	"environment": "client",
 
-	"mixins": ["rebranded.mixins.json"],
+	"mixins": [
+		"commonbrand.mixins.json"
+	],
 
 	"depends": {
 		"fabricloader": "*",
