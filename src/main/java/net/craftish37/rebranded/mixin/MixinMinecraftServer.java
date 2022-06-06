@@ -13,6 +13,6 @@ public abstract class MixinMinecraftServer {
 	@Overwrite(remap = false)
 	@DontObfuscate
 	public String getServerModName() {
-		return "vanilla";
+		return "Common-Sense / QuiltMC";
 	}
 }
