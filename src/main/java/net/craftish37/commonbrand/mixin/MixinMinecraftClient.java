@@ -26,26 +26,4 @@ public class MixinMinecraftClient {
 
 		return version;
 	}
-
-	@Redirect(
-		method = "<init>",
-		at = @At(
-			value = "FIELD",
-			target = "Lnet/minecraft/client/RunArgs$Game;versionType:Ljava/lang/String;"
-		)
-	)
-	private String redirectVersionType(RunArgs.Game game) {
-
-		String versionType = game.versionType;
-
-		if (versionType.endsWith("Fabric")) {
-			if (versionType.endsWith("/Fabric")) {
-				return versionType.substring(0, versionType.length() - 7);
-			}
-
-			return "release";
-		}
-
-		return versionType;
-	}
 }
