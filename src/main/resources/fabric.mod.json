@@ -12,7 +12,7 @@
 	},
 
 	"license": "GPLv3+",
-	"icon": "assets/rebranded/icon.png",
+	"icon": "assets/commonbrand/icon.png",
 
 	"environment": "client",
 
@@ -22,6 +22,6 @@
 
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": "1.19"
+		"minecraft": ">=1.16.5"
 	}
 }
